@@ -1,6 +1,6 @@
-##Original Data
+## Original Data
 
-###Overview:
+### Overview:
 
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
 
@@ -14,7 +14,7 @@ For each record, the following is provided:
 - Its activity label. 
 - An identifier of the subject who carried out the experiment.
 
-###Features:
+### Features:
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
@@ -58,10 +58,10 @@ The complete list of variables of each feature vector is available in 'features.
 
 [Source](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
 
-##Script Goal
+## Script Goal
 A tidy data set containing the averages of selected variables by subject and activity. 
 
-##Script Walkthrough
+## Script Walkthrough
 **Step 1: Download and Read Files**
 
 The files in the original data set are downloaded and the following files are read in:
@@ -113,7 +113,7 @@ The measurement variable were renamed for readability in the following manner:
 
 A new, tidy data set is created by computing the average of each variable by subject and activity. This new data set is then written to a file called "tidyData.txt"
 
-##Output Data
+## Output Data
 
 The output data set contains 81 variables:
 
